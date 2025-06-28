@@ -23,6 +23,10 @@
     font-family: alice;
     src: url(text/Alice\ in\ Wonderland.ttf) format('truetype');
 }
+@font-face {
+    font-family: rodape;
+    src: url(text/Hey\ Comic.ttf) format('truetype')
+}
 /* Corpo */
 body {
     font-family: arial, sans-serif;
@@ -47,13 +51,11 @@ header {
     background-size: cover;
     z-index: 10;
 }
-
+/*inicio*/
 header span button {
     display: flex;
-    margin: 0 auto;
-
     font-family: 'magia', sans-serif;
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     color: #ec7e00;
     text-shadow: #000000 2px 2px 1px;
     
@@ -62,12 +64,47 @@ header span button {
     border-radius: 5px;
     cursor: pointer;
 }
+
 button:hover {
     color: #ff9d1d;
     text-shadow: #000000 2px 3px 1px;
     background-color: rgba(0, 38, 255, 0.477);
 }
 button:active {
+    color: #45fff9;
+    text-shadow: #000000 2px 1px 2px;
+    background-color:rgba(0, 21, 255, 0.584);
+}
+header span img {
+    width: 8vh;
+    height: 6vh;
+    vertical-align: -10px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+#final button {
+    font-family: 'magia', sans-serif;
+    font-size: 1.7rem;
+    color: #ec7e00;
+    text-shadow: #000000 2px 2px 2px;
+    text-align: left;
+    background-color: rgba(0, 153, 255, 0.214);
+    position: fixed;
+    bottom: 1px;
+    left: 4%;
+    width: 107px;
+    height: 50px;
+    border: 1px solid #ff8800;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+#final button:hover {
+    color: #ff9d1d;
+    text-shadow: #000000 2px 3px 1px;
+    background-color: rgba(0, 38, 255, 0.477);
+}
+#final button:active {
     color: #45fff9;
     text-shadow: #000000 2px 1px 2px;
     background-color:rgba(0, 21, 255, 0.584);
@@ -113,7 +150,7 @@ header span img {
 .mensagem1 {
     background-color: #89f274e8;
 }
-/* Inicio d conteudo*/
+/* Inicio do conteudo*/
 h1 {
     font-family: 'magia', sans-serif;
     color: #ff8800;
@@ -162,6 +199,14 @@ p {
     right: 3.5%;
     margin-bottom: 8px;
    }
+p.rodape {
+    font-family: 'rodape', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: justify;
+}
+p>strong {
+    color: #ff0000;
+}
 
 /* itens da lista de presentes */
 .gift-list {
@@ -237,15 +282,15 @@ h4 {
     font-family: 'magia', sans-serif;
     font-size: 1.8rem;
     color: #20ee00;
-    text-shadow: #000000 2px 2px 2px;
+    text-shadow: #000000 4px 3px 2px;
     text-align: left;
-    background-color: rgba(0, 153, 255, 0.214);
+    background-color: rgba(255, 0, 0, 0.74);
     position: fixed;
     bottom: 7px;
     right: 5%;
-    width: 170px;
-    height: 50px;
-    border: 1px solid #5eff00;
+    width: 167px;
+    height: 48px;
+    border: 2px 2px #20ee00;
     border-radius: 5px;
     cursor: pointer;
     z-index: 10;
@@ -255,6 +300,7 @@ h4 {
     height: 30px;
     vertical-align: -3px;
     margin-left: 4px;
+    filter: drop-shadow(4px 3px 2px #000000);
 }
 #whatsapp button:hover {
     color: #009e00;
@@ -265,6 +311,9 @@ h4 {
     color: #45fff9;
     text-shadow: #000000 2px 1px 1px;
     background-color: rgba(0, 21, 255, 0.622);
+}
+#fim {
+    margin-bottom: 150px
 }
 /* Responsividade */
 @media (min-width: 100px) {

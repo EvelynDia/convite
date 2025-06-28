@@ -8,17 +8,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
+ /*botão final*/
 document.addEventListener('DOMContentLoaded', function() {
-    // Botão início (já existente)
-    const btnInicio = document.getElementById('inicio');
-    if (btnInicio) {
-        btnInicio.addEventListener('click', function(e) {
+    const btnFinal = document.getElementById('final');
+    if (btnFinal) {
+        btnFinal.addEventListener('click', function(e) {
             e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Alterado para rolar até o final da página
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
         });
     }
-
     // Botão confirmar presença (WhatsApp)
     const btnWhatsapp = document.querySelector('#whatsapp');
     if (btnWhatsapp) {
